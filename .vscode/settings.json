@@ -6,7 +6,7 @@
   "editor.insertSpaces": true,
   "editor.codeActionsOnSave": {
     "source.addMissingImports.ts": "never",
-    "source.fixAll.eslint": "never",
+    "source.fixAll.eslint": "always",
     "source.organizeImports": "never",
     "source.sortImports": "never",
     "source.removeUnused.ts": "never",
@@ -39,7 +39,7 @@
     "**/.gitignore": true,
     "**/app.json": true,
     "index.d.ts": true,
-    "index.js": true
+    "index.js": false
   },
   "files.watcherExclude": {
     "**/.git/objects/**": true,
