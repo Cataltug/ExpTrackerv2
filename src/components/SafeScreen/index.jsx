@@ -8,7 +8,7 @@ function SafeScreen(props) {
 
 
   return (
-    <View style={{flex: 1, top: applyTopMargin ? top: 0, bottom}}>
+    <View style={{flex: 1, top: applyTopMargin ? top: 0}}>
       {children}
     </View>
   )

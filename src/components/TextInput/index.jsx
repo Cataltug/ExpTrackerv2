@@ -44,10 +44,10 @@ const styles = StyleSheet.create({
         marginBottom: 8,
         marginLeft: 10,
         alignSelf: "flex-start",
-        color: 'fff',
+        color: "snow"
     },
     inputContainer: {
-        borderWidth: 2,
+        borderWidth: 3,
         borderColor: '#ddd',
         borderRadius: 15,
         paddingHorizontal: 15,
@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff",
     },
     focusedInput: {
-        borderColor: '#4CAF50',
-        backgroundColor: '#f1f1f1',
+        borderColor: 'darkslategrey',
+        backgroundColor: 'honeydew',
     },
     input: {
         height: 50,

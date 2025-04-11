@@ -1,4 +1,4 @@
-import { View, Text, Dimensions, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Dimensions, StyleSheet, ScrollView, ImageBackground } from 'react-native';
 import React from 'react';
 import { useNavigation, StackActions } from '@react-navigation/native';
 import Button from '../../components/Button';
@@ -18,19 +18,24 @@ function Details({ route }) {
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <View style={styles.custom}>
-        <Text style={{ fontSize: 24 }}>{title} expense details</Text>
-        <View style={{ marginTop: 20 }}>
-          <Text style={{ fontSize: 18 }}>Amount: {amount}</Text>
-          <Text style={{ fontSize: 18 }}>Date: {date}</Text>
-          <Text style={{ fontSize: 18 }}>Category: {category}</Text>
+    <ImageBackground
+                source={require("../../assets/image.jpg")}
+                style={{ flex: 1 }}
+    >
+      <ScrollView contentContainerStyle={styles.container}>
+        <View style={styles.custom}>
+          <Text style={{ fontSize: 24, color: "snow" }}>{title} expense details</Text>
+          <View style={{ marginTop: 20 }}>
+            <Text style={{ fontSize: 18, color: "snow" }}>Amount: {amount}</Text>
+            <Text style={{ fontSize: 18, color: "snow" }}>Date: {date}</Text>
+            <Text style={{ fontSize: 18, color: "snow" }}>Category: {category}</Text>
+          </View>
+          <View style={{ marginTop: 20, alignSelf: "center" }}>
+            <Button title="Delete Expense" onPress={handleDelete} />
+          </View>
         </View>
-        <View style={{ marginTop: 20, alignSelf: "center" }}>
-          <Button title="Delete Expense" onPress={handleDelete} />
-        </View>
-      </View>
-    </ScrollView>
+      </ScrollView>
+    </ImageBackground>
   );
 }
 
@@ -42,7 +47,7 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   custom: {
-    backgroundColor: "darkseagreen",
+    backgroundColor: "dimgray",
     padding: 20,
     borderRadius: 8,
     width: '80%',

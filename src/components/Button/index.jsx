@@ -4,7 +4,7 @@ import { TouchableOpacity, Text, StyleSheet, Dimensions } from 'react-native';
 
 const width = Dimensions.get("screen").width;
 
-const Button = ({ title, onPress, backgroundColor = 'seagreen', textColor = 'white', style }) => {
+const Button = ({ title, onPress, backgroundColor = 'slategray', textColor = 'snow', style }) => {
   return (
     <TouchableOpacity 
       style={[styles.button, { backgroundColor: backgroundColor, width: width * 0.65 }, style]} 

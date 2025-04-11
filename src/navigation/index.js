@@ -18,9 +18,17 @@ const MyStack = createNativeStackNavigator({
         CategoryExpenses: screens.CategoryExpenses,
         AddScreen: {
             screen: screens.AddScreen,
-            options: { headerShown: true, headerTitle: "Go Back"}
+            options: {
+                headerShown: true,
+                headerTitle: "Go Back",
+                headerTintColor: "snow",
+                headerStyle: {
+                backgroundColor: 'slategray',
+                },
+            }
         }
     }
 })
+
 
 export default createStaticNavigation(MyStack);
