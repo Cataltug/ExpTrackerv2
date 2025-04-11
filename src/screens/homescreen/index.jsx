@@ -74,8 +74,8 @@ function Home({ route }) {
                 {categories.map(category => (
                   <View key={category} style={{ width: width, padding: 10, backgroundColor: "darkgray", borderRadius: 8, marginRight: 10, alignItems: "center" }}>
                     <TouchableOpacity onPress={() => navigation.navigate("CategoryExpenses", { category, expenses })}>
-                      <Text style={{ fontSize: 18, color: "black", marginTop:8 }}>Category: {category}</Text>
-                      <Text style={{color: "black"}}>Total: {getCategoryTotal(category)} ₺</Text>
+                      <Text style={{ fontSize: 18, color: "black", marginTop:8 }}>{category}</Text>
+                      <Text style={{color: "black"}}>Total money spent: {getCategoryTotal(category)} ₺</Text>
                     </TouchableOpacity>
                   </View>
                 ))}
