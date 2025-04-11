@@ -13,12 +13,15 @@ function CategoryExpenses() {
 
   const filteredExpenses = expenses.filter(exp => exp.category === category);
 
+
+  const totalAmount = filteredExpenses.reduce((total, expense) => total + parseFloat(expense.amount), 0);
+
   return (
     <View style={{ flex: 1, padding: 20 }}>
       <Text style={{ fontSize: 36, textAlign: "center" }}>Expenses for {category}</Text>
 
       <FlatList
-        data={filteredExpenses} 
+        data={filteredExpenses}
         renderItem={({ item }) => (
           <View style={{ padding: 15, backgroundColor: "seagreen", marginVertical: 5, borderRadius: 5 }}>
             <Text style={{ color: "white", fontSize: 18 }}>Title: {item.title}</Text>
@@ -30,9 +33,14 @@ function CategoryExpenses() {
         keyExtractor={(item, index) => index.toString()}
         ListEmptyComponent={<Text style={{ marginTop: 10, marginLeft: 20 }}>No expenses found for this category.</Text>}
       />
-        <View style={{alignSelf:"center"}}>
-            <Button title="Go Back" onPress={() => navigation.dispatch(StackActions.popTo("Home"))} />
-        </View>
+
+      <Text style={{ fontSize: 18, fontWeight: "bold", marginTop: 20 }}>
+        Total Amount Spent for {category}: {totalAmount.toFixed(2)} ₺
+      </Text>
+
+      <View style={{ alignSelf: "center", marginTop: 20 }}>
+        <Button title="Go Back" onPress={() => navigation.dispatch(StackActions.popTo("Home"))} />
+      </View>
     </View>
   );
 }

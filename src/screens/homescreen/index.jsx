@@ -36,7 +36,6 @@ function ListItem({ item, onPress }) {
 function Home({ route }) {
   const navigation = useNavigation();
   const [expenses, setExpenses] = useState([]);
-  const [categories, setCategories] = useState([]);
 
   useEffect(() => {
     if (route && route.params && route.params.expense) {
