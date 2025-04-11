@@ -1,1 +1,191 @@
-[]
+[
+    {
+      "title": "Groceries",
+      "amount": 150.75,
+      "date": "2025-04-06",
+      "category": "Food",
+      "created": 1678556750000
+    },
+    {
+      "title": "Coffee",
+      "amount": 32.5,
+      "date": "2025-04-08",
+      "category": "Food",
+      "created": 1678638350000
+    },
+    {
+      "title": "Snacks",
+      "amount": 10.25,
+      "date": "2025-04-04",
+      "category": "Food",
+      "created": 1678251750000
+    },
+    {
+      "title": "Pizza Delivery",
+      "amount": 25.5,
+      "date": "2025-04-02",
+      "category": "Food",
+      "created": 1678129150000
+    },
+    {
+      "title": "Milk and Bread",
+      "amount": 15.0,
+      "date": "2025-03-30",
+      "category": "Food",
+      "created": 1677610950000
+    },
+    {
+      "title": "Takeout Dinner",
+      "amount": 40.0,
+      "date": "2025-03-28",
+      "category": "Food",
+      "created": 1677599950000
+    },
+    {
+      "title": "Netflix Subscription",
+      "amount": 49.99,
+      "date": "2025-04-02",
+      "category": "Entertainment",
+      "created": 1678129150000
+    },
+    {
+      "title": "Movie Tickets",
+      "amount": 30.0,
+      "date": "2025-04-03",
+      "category": "Entertainment",
+      "created": 1678180150000
+    },
+    {
+      "title": "Concert Tickets",
+      "amount": 120.0,
+      "date": "2025-04-01",
+      "category": "Entertainment",
+      "created": 1678047350000
+    },
+    {
+      "title": "Video Games",
+      "amount": 60.0,
+      "date": "2025-03-27",
+      "category": "Entertainment",
+      "created": 1677472950000
+    },
+    {
+      "title": "Streaming Service",
+      "amount": 15.0,
+      "date": "2025-04-05",
+      "category": "Entertainment",
+      "created": 1678320550000
+    },
+    {
+      "title": "Gas",
+      "amount": 300.0,
+      "date": "2025-04-04",
+      "category": "Transportation",
+      "created": 1678251550000
+    },
+    {
+      "title": "Public Transport Pass",
+      "amount": 50.0,
+      "date": "2025-03-30",
+      "category": "Transportation",
+      "created": 1677610950000
+    },
+    {
+      "title": "Uber Ride",
+      "amount": 15.0,
+      "date": "2025-03-29",
+      "category": "Transportation",
+      "created": 1677524550000
+    },
+    {
+      "title": "Car Service",
+      "amount": 120.0,
+      "date": "2025-03-25",
+      "category": "Transportation",
+      "created": 1677182350000
+    },
+    {
+      "title": "Parking Ticket",
+      "amount": 50.0,
+      "date": "2025-03-23",
+      "category": "Transportation",
+      "created": 1677100150000
+    },
+    {
+      "title": "Gym Membership",
+      "amount": 199.99,
+      "date": "2025-03-28",
+      "category": "Health",
+      "created": 1677599950000
+    },
+    {
+      "title": "Doctor Visit",
+      "amount": 80.0,
+      "date": "2025-03-22",
+      "category": "Health",
+      "created": 1676967350000
+    },
+    {
+      "title": "Medication",
+      "amount": 25.0,
+      "date": "2025-04-07",
+      "category": "Health",
+      "created": 1678553150000
+    },
+    {
+      "title": "Health Insurance",
+      "amount": 120.0,
+      "date": "2025-03-30",
+      "category": "Health",
+      "created": 1677610950000
+    },
+    {
+      "title": "Fuel for Car",
+      "amount": 75.0,
+      "date": "2025-04-05",
+      "category": "Fuel",
+      "created": 1678320550000
+    },
+    {
+      "title": "Gas Station",
+      "amount": 55.0,
+      "date": "2025-03-29",
+      "category": "Fuel",
+      "created": 1677524550000
+    },
+    {
+      "title": "Rent for Apartment",
+      "amount": 1200.0,
+      "date": "2025-04-01",
+      "category": "Rent",
+      "created": 1678047350000
+    },
+    {
+      "title": "Office Rent",
+      "amount": 800.0,
+      "date": "2025-03-31",
+      "category": "Rent",
+      "created": 1677950950000
+    },
+    {
+      "title": "Phone Bill",
+      "amount": 40.0,
+      "date": "2025-04-07",
+      "category": "Bills",
+      "created": 1678553150000
+    },
+    {
+      "title": "Electricity Bill",
+      "amount": 75.0,
+      "date": "2025-04-02",
+      "category": "Bills",
+      "created": 1678129150000
+    },
+    {
+      "title": "Internet Bill",
+      "amount": 60.0,
+      "date": "2025-03-30",
+      "category": "Bills",
+      "created": 1677610950000
+    }
+  ]

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import components from '../../components'
 import { useNavigation } from '@react-navigation/native'
 import Button from '../../components/Button'
+import data from "../../mock_data/expenses.json"
 
 const {SafeScreen} = components;
 
@@ -25,7 +26,7 @@ function ListItem({ item, onPress }) {
 
 function Home({ route }) {
   const navigation = useNavigation();
-  const [expenses, setExpenses] = useState([]);
+  const [expenses, setExpenses] = useState(data); //delete data and add [] to remove mock_data
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -72,7 +73,12 @@ function Home({ route }) {
                 pagingEnabled
               >
                 {categories.map(category => (
-                  <View key={category} style={{ width: width, padding: 10, backgroundColor: "darkgray", borderRadius: 8, marginRight: 10, alignItems: "center" }}>
+                  <View key={category} style={{ width: width,
+                  padding: 10,
+                  backgroundColor: "darkgray",
+                  borderRadius: 8,
+                  alignItems: "center",
+                  opacity: 0.9}}>
                     <TouchableOpacity onPress={() => navigation.navigate("CategoryExpenses", { category, expenses })}>
                       <Text style={{ fontSize: 18, color: "black", marginTop:8 }}>{category}</Text>
                       <Text style={{color: "black"}}>Total money spent: {getCategoryTotal(category)} ₺</Text>
