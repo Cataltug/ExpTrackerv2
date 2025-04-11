@@ -1,9 +1,9 @@
-import { View, Text, Dimensions, Button } from 'react-native'
-import React, { useState, useEffect } from 'react'
+import { View, Text, Dimensions } from 'react-native'
+import React, { useState } from 'react'
 import InputField from '../../components/TextInput';
 import { useNavigation, StackActions } from '@react-navigation/native'
-
 import components from '../../components';
+import Button from '../../components/Button';
 
 const {SafeScreen} = components;
 const width = Dimensions.get("screen").width;
@@ -32,8 +32,8 @@ function AddScreen(){
     const onConfirm = () => {
         if (!expense.title || !expense.amount || !expense.date || !expense.category) {
             alert("Please fill all fields before submitting.");
-            return;
-        }
+        return;
+    }
         expense.created = Date.now();
         navigation.dispatch(StackActions.popTo("Home", { expense }));
     };
@@ -42,8 +42,8 @@ function AddScreen(){
     <SafeScreen applyTopMargin={false}>
 
         <View style={{flex: 1}}>
-            <Text style={{fontSize:36}}>Expense Details</Text>
-
+            <Text style={{fontSize:28, marginTop:10, marginLeft:10}}>Expense Details</Text>
+            <Text style={{fontSize:18, marginTop:10, marginLeft:10}}>Please fill all fields before submitting</Text>
                 <InputField
                     title="Expense"
                     placeholder="Enter expense..."
@@ -71,7 +71,7 @@ function AddScreen(){
 
         <View style={{flex:1, justifyContent: "flex-end", marginBottom: 50}}>
             <View style={{marginHorizontal: 25, borderRadius: 8, width: width * 0.65, alignSelf: "center" }}>
-                <Button title='Confirm' onPress={onConfirm} />
+                <Button title='Submit' onPress={onConfirm} />
             </View>
         </View>
 
