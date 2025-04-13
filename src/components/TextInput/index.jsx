@@ -36,7 +36,7 @@ const InputField = ({ title, placeholder, onChangeText, field }) => {
 const styles = StyleSheet.create({
     container: {
         marginTop: 20,
-        marginBottom: 10
+        marginBottom: 10,
     },
     title: {
         fontSize: 18,
@@ -44,25 +44,25 @@ const styles = StyleSheet.create({
         marginBottom: 8,
         marginLeft: 10,
         alignSelf: "flex-start",
-        color: "snow"
+        color: "#2c3e50",
     },
     inputContainer: {
-        borderWidth: 3,
-        borderColor: '#ddd',
-        borderRadius: 15,
+        borderWidth: 2,
+        borderColor: '#BDC3C7',
+        borderRadius: 12,
         paddingHorizontal: 15,
         width: width * 0.75,
         alignSelf: "center",
-        backgroundColor: "#fff",
+        backgroundColor: "#ECF0F1",
     },
     focusedInput: {
-        borderColor: 'darkslategrey',
-        backgroundColor: 'honeydew',
+        borderColor: '#34495E',
+        backgroundColor: 'lavenderblush',
     },
     input: {
         height: 50,
         fontSize: 16,
-        color: "black",
+        color: "#34495E",
         paddingLeft: 10,
         borderRadius: 12,
     },

@@ -47,8 +47,8 @@ function AddScreen(){
         <SafeScreen applyTopMargin={false}>
 
             <View style={{flex: 1}}>
-                <Text style={{fontSize:28, marginTop:10, marginLeft:10, color: "snow"}}>Expense Details</Text>
-                <Text style={{fontSize:18, marginTop:10, marginLeft:10, color: "snow"}}>Please fill all fields before submitting</Text>
+                <Text style={{fontSize:28, marginTop:10, marginLeft:10, color: "#2c3e50"}}>Expense Details</Text>
+                <Text style={{fontSize:18, marginTop:10, marginLeft:10, color: "#2c3e50"}}>Please fill all fields before submitting</Text>
                     <InputField
                         title="Expense"
                         placeholder="Enter expense..."

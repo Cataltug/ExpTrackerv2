@@ -4,7 +4,7 @@ import { TouchableOpacity, Text, StyleSheet, Dimensions } from 'react-native';
 
 const width = Dimensions.get("screen").width;
 
-const Button = ({ title, onPress, backgroundColor = 'slategray', textColor = 'snow', style }) => {
+const Button = ({ title, onPress, backgroundColor = 'lightcoral', textColor = '#2c3e50', style }) => {
   return (
     <TouchableOpacity 
       style={[styles.button, { backgroundColor: backgroundColor, width: width * 0.65 }, style]} 
@@ -23,10 +23,12 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     justifyContent: 'center',
     alignItems: 'center',
+    borderWidth: 0.5,
+    borderColor: "#2c3e50"
   },
   buttonText: {
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: "500",
   }
 });
 

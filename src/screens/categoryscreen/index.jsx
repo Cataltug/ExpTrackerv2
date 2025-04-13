@@ -1,6 +1,6 @@
 import { View, Text, FlatList, TouchableOpacity, Dimensions, ImageBackground } from 'react-native';
-import React, { useState, useEffect } from 'react';
-import { useNavigation, useRoute } from '@react-navigation/native';
+import React, { useState } from 'react';
+import { StackActions, useNavigation, useRoute } from '@react-navigation/native';
 import Button from '../../components/Button';
 import SafeScreen from '../../components/SafeScreen';
 
@@ -28,17 +28,17 @@ function Category() {
     >
       <SafeScreen>
         <View style={{ flex: 1, padding: 20 }}>
-          <Text style={{ fontSize: 36, textAlign: "center", color:"snow" }}>Category Screen</Text>
+          <Text style={{ fontSize: 36, textAlign: "center", color:"#2c3e50" }}>Category Screen</Text>
 
-
+          
           <FlatList style ={{flex: 0.65
 
           }}
             data={categories}
             renderItem={({ item }) => (
               <TouchableOpacity onPress={() => handleCategoryPress(item)}>
-                <View style={{ padding: 15, backgroundColor: "dimgray", marginVertical: 15, borderRadius: 5 }}>
-                  <Text style={{ color: "white", fontSize: 18 }}>{item}</Text>
+                <View style={{ padding: 15, backgroundColor: "lavenderblush", marginVertical: 15, borderRadius: 5, borderWidth:1 }}>
+                  <Text style={{ color: "black", fontSize: 18 }}>{item}</Text>
                 </View>
               </TouchableOpacity>
             )}
@@ -48,7 +48,7 @@ function Category() {
 
 
             <View style={{alignSelf:"center",marginBottom: 25}}>
-              <Button title="Go Back" onPress={() => navigation.goBack()} />
+              <Button title="Go Back" onPress={() => navigation.dispatch(StackActions.popTo("Home"))} />
             </View>
         </View>
       </SafeScreen>

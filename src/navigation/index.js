@@ -23,7 +23,7 @@ const MyStack = createNativeStackNavigator({
                 headerTitle: "Go Back",
                 headerTintColor: "snow",
                 headerStyle: {
-                backgroundColor: 'slategray',
+                backgroundColor: '#2c3e50',
                 },
             }
         }

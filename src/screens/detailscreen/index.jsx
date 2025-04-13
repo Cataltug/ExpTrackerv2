@@ -24,17 +24,21 @@ function Details({ route }) {
     >
       <ScrollView contentContainerStyle={styles.container}>
         <View style={styles.custom}>
-          <Text style={{ fontSize: 24, color: "snow" }}>{title} expense details</Text>
+          <Text style={{ fontSize: 24, color: "black",fontWeight: "bold" }}>{title} expense details</Text>
           <View style={{ marginTop: 20 }}>
-            <Text style={{ fontSize: 18, color: "snow" }}>Amount: {amount}</Text>
-            <Text style={{ fontSize: 18, color: "snow" }}>Date: {date}</Text>
-            <Text style={{ fontSize: 18, color: "snow" }}>Category: {category}</Text>
+            <Text style={{ fontSize: 18, color: "black",fontWeight: "bold" }}>Amount: {amount} ₺</Text>
+            <Text style={{ fontSize: 18, color: "black" }}>Date: {date}</Text>
+            <Text style={{ fontSize: 18, color: "black" }}>Category: {category}</Text>
           </View>
           <View style={{ marginTop: 20, alignSelf: "center" }}>
             <Button title="Delete Expense" onPress={handleDelete} />
           </View>
+          
         </View>
       </ScrollView>
+            <View style={{alignSelf:"center",marginBottom: 25}}>
+              <Button title="Go Back" onPress={() => navigation.dispatch(StackActions.popTo("Home"))} />
+            </View>
     </ImageBackground>
   );
 }
@@ -47,7 +51,7 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   custom: {
-    backgroundColor: "dimgray",
+    backgroundColor: "lavenderblush",
     padding: 20,
     borderRadius: 8,
     width: '80%',
