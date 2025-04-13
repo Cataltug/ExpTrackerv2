@@ -70,7 +70,7 @@
 - git clone https://github.com/Cataltug/ExpTrackerv2
 
 - Navigate to the project folder:
-- cd ExpenseTrackerApp
+- cd ExpenseTracker-v2
 
 - Install the dependencies:
 - npm install
