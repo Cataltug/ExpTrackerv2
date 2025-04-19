@@ -1,14 +1,17 @@
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import RootNavigator from './src/navigation'
+import { ExpenseProvider } from './expenseContext';
 
 
 
 function App() {
   return (
-    <SafeAreaProvider>
-      <RootNavigator />
-    </SafeAreaProvider>
+    <ExpenseProvider>
+      <SafeAreaProvider>
+        <RootNavigator />
+      </SafeAreaProvider>
+    </ExpenseProvider>
   );
 }
 
